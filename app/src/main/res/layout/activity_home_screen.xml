@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/modif"
     tools:context=".HomeScreen">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="117dp"
-        android:layout_height="51dp"
+        android:layout_width="254dp"
+        android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="40dp"
@@ -24,14 +25,15 @@
 
     <TextView
         android:id="@+id/welcomeUsername"
-        android:layout_width="134dp"
-        android:layout_height="55dp"
+        android:layout_width="256dp"
+        android:layout_height="51dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:gravity="center"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />

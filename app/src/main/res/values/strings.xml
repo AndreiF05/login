@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">App</string>
+    <color name="white">#f5f5dc</color>
+    <color name="blue">#EEFBFC</color>
+    <color name="modif">#E7E7E7</color>
 </resources>
