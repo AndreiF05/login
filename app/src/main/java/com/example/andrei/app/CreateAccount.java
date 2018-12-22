@@ -33,9 +33,10 @@ public class CreateAccount extends AppCompatActivity {
                     boolean isInserted = myDb.insertData(editUsername.getText().toString(),
                             editEmail.getText().toString(),
                             editPass.getText().toString());
-                    if(isInserted =true)
-                        Toast.makeText(CreateAccount.this,"Data Inserted",Toast.LENGTH_LONG).show();
-                    else
+                    if(isInserted =true) {
+                        Toast.makeText(CreateAccount.this, "Data Inserted", Toast.LENGTH_LONG).show();
+                    }
+                        else
                         Toast.makeText(CreateAccount.this,"Data NOT Inserted",Toast.LENGTH_LONG).show();
                 }
             }
