@@ -17,10 +17,10 @@ public class CreateAccount extends AppCompatActivity {
         setContentView(R.layout.activity_create_account);
 
         myDb = new DatabaseHelper(this);
-        editUsername = {EditText} findViewById(R.id.editUsername);
-        editEmail = {EditText} findViewById(R.id.editEmail);
-        editPass = {EditText} findViewById(R.id.editPass);
-        editConfPass = {EditText} findViewById(R.id.editConfPass);
+        editUsername = (EditText) findViewById(R.id.editUsername);
+        editEmail = (EditText) findViewById(R.id.editEmail);
+        editPass = (EditText) findViewById(R.id.editPass);
+        editConfPass = (EditText) findViewById(R.id.editConfPass);
         signUp = (Button) findViewById(R.id.signUp);
         addData();
     }
