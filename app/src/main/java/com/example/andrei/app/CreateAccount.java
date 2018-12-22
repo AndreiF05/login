@@ -23,6 +23,7 @@ public class CreateAccount extends AppCompatActivity {
         editConfPass = (EditText) findViewById(R.id.editConfPass);
         signUp = (Button) findViewById(R.id.signUp);
         addData();
+        //TODO: add hide keyboard event on project!
     }
     public void addData(){
         signUp.setOnClickListener(){
