@@ -26,21 +26,18 @@ public class CreateAccount extends AppCompatActivity {
         //TODO: add hide keyboard event on project!
     }
     public void addData(){
-        signUp.setOnClickListener(){
-            new View.OnClickListener(){
-                @Override
-                public void onClick(View view){
-                    boolean isInserted = myDb.insertData(editUsername.getText().toString(),
-                            editEmail.getText().toString(),
-                            editPass.getText().toString());
-                    if(isInserted =true) {
-                        Toast.makeText(CreateAccount.this, "Data Inserted", Toast.LENGTH_LONG).show();
-                    }
-                        else
-                        Toast.makeText(CreateAccount.this,"Data NOT Inserted",Toast.LENGTH_LONG).show();
-                }
+        signUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean isInserted = myDb.insertData(editUsername.getText().toString(),
+                        editEmail.getText().toString(),
+                        editPass.getText().toString());
+                if(isInserted == true)
+                    Toast.makeText(CreateAccount.this, "Data Inserted", Toast.LENGTH_LONG).show();
+                else
+                    Toast.makeText(CreateAccount.this,"Data NOT Inserted",Toast.LENGTH_LONG).show();
             }
-        }
+        });
     }
 
 }
