@@ -29,15 +29,24 @@ public class CreateAccount extends AppCompatActivity {
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                boolean isInserted = myDb.insertData(editUsername.getText().toString(),
+                //TODO: validate text fields with proper requirements (pass contain @ and .)
+                long idUSerAddedOnDatabase = myDb.insertUser(editUsername.getText().toString(),
                         editEmail.getText().toString(),
                         editPass.getText().toString());
-                if(isInserted == true)
+
+/*
+                UserModel existingUserOnDatabase = myDb.getUser(idUSerAddedOnDatabase);
+
+                if (existingUserOnDatabase != null) {
                     Toast.makeText(CreateAccount.this, "Data Inserted", Toast.LENGTH_LONG).show();
+                }
                 else
                     Toast.makeText(CreateAccount.this,"Data NOT Inserted",Toast.LENGTH_LONG).show();
+*/
             }
         });
+
+
     }
 
 }

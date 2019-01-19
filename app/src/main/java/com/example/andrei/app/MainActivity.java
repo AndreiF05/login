@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         EditText password = (EditText) findViewById(R.id.password);
         String data1 = String.valueOf(username.getText());
         String data2 = String.valueOf(password.getText());
+        //TODO: validate username & password in database
         if(data1.equals("admin") && data2.equals("admin")){
             Intent login = new Intent(this, HomeScreen.class);
             login.putExtra("mesaj", data1);
